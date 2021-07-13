@@ -56,6 +56,31 @@ padding: 15px;}
     font-size: 16px;
 text-align: justify;}
 
+/*------------------------------
+ copa section
+ --------------------------------------- */
+ .copa {margin: 140px 180px;box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);}
+ .copa-title {padding-top: 70px;
+     text-align: center;
+font-size: 40px;
+ }
+ .copa-team{display: grid;
+grid-template-columns:repeat(2,1fr);
+justify-content: center;}
+.copa-cup{display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-bottom: 50px;}
+.copa img {width: 300px;}
+.copa h2{color: rgb(175, 150, 150);}
+
+.copa-cup h1{    font-size: xx-large;
+    margin-top: 1px;
+    text-decoration: overline;
+    text-align: center;
+}
+
 /*---------------------------------
  highlights section 
  ------------------------------------*/
