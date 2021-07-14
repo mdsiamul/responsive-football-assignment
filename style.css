@@ -161,11 +161,11 @@ media quary star
 
         .headers, .players ,#football, .copa-team, .highlights{
         grid-template-columns: repeat(1,1fr);}
-.players, #football, .copa, .highlights{padding:0;
-margin: 15px;}
+        .players, #football, .copa, .highlights{padding:0;
+        margin: 15px;}
         
         .headers { margin: auto;
-padding: 16px;}
+        padding: 16px;}
 
 
 
@@ -173,14 +173,55 @@ padding: 16px;}
             height: 259.17px}
         .web-title h1{font-size: 
             36px;}
+    
+
             .heighlights-details h1 {font-size: 
                 30px;}
             .football-img img{margin: 10px;}
             .heighlights-img img{width: 328px;
-                height: 248px;margin-top: 30px;}
+                height: 248px;margin-top: 30px;
+                margin-left: 50px;}
 
                 .logo img{Width:300px;
                     height: 70px;
                 }
-
+                
     }
+    
+@media only screen and (min-width:688px) and (max-width:992px){
+
+
+
+    .header, #football, .copa, .heighlights-details{width: 100%;}
+
+    .headers, .players ,.copa-team, .highlights{
+    grid-template-columns: repeat(2,1fr);}
+    #football {grid-template-columns: repeat(1,1fr);}
+    .players, #football, .copa, .highlights{padding:0;
+    margin: 15px;}
+    
+    .headers { margin: auto;
+        padding-top:50px;
+    padding-left: 50px;}
+
+
+
+    .welcome-img img{width: 350px;
+        height: 270px}
+    .web-title h1{font-size: 
+        40px;}
+
+
+        .heighlights-details h1 {font-size: 
+            30px;}
+        .football-img img{margin: 10px;}
+        .heighlights-img img{width: 328px;
+            height: 248px;margin-top: 30px;
+            margin-left: 50px;}
+
+            .logo img{Width:300px;
+                height: 70px;
+            }
+            
+
+}
