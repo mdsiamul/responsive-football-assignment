@@ -129,7 +129,7 @@ margin-bottom: 50px;}
 grid-template-columns: repeat(2,1fr);}
  .heighlights-img img {width: 567px;
     height: 427px;}
-    .heighlights-details{;width: 469px;}
+    .heighlights-details{width: 469px;}
 .heighlights-details h1 {font-weight: bold;
     font-size: 48px;}
     .heighlights-details p{margin-bottom: 25px;}
