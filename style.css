@@ -7,14 +7,14 @@ body{font-family: 'Poppins', sans-serif;}
 header sectioin
 --------------------------- */
 
-.header {display: flex;
+.header {
 background-color: #2D25A0;
-justify-content:space-between;
-align-items: center;}
-.web-title{display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    }
+}
+
+.headers{display: grid;
+    grid-template-columns:repeat(2,1fr);
+padding-left: 150px;
+grid-gap:30px}
 .web-title h1{ font-size: 64px;
 
 
@@ -25,12 +25,19 @@ background-color:
 #E02C6D; 
 padding: 10px 24px;
 color: white;}
+.watch-live:hover{background-color: black;
+
+transition-duration:2s;}
 
 .welcome-img img {width: 556.01px;
     height: 438px;
 margin-top: 67px;
 margin-bottom: 86px;
 margin-right: 140px;
+}
+.welcome-img:hover{
+    transform: rotate(360deg);
+    transition-duration: 2s;
 }
 /* ----------------------
 main section start 
@@ -56,10 +63,43 @@ padding: 15px;}
     font-size: 16px;
 text-align: justify;}
 
+/* ------------------------------------------
+football section  
+-----------------------------------------------*/
+#football{display: grid;
+grid-template-columns: repeat(2,1fr);
+margin: 180px;
+width: 1135px;
+}
+
+
+.footballis h1 {margin-top: 40px;font-size:50px;color: #007386;
+margin-bottom: o;
+text-align: center;
+}
+
+.footballis p {font-size: 20px;
+padding:10px 40px; 
+box-shadow: 20px 30px 30px #c13c3c75;
+border-radius: 15px;
+border-top: 3px solid #c6e8f5;
+    border-left: 3px solid #c6e8f5;
+  text-align: justify;}
+
+
+
+.football-img img {width: 90%;
+    margin-left: 100px;
+    margin-top: 70px;
+}
+
 /*------------------------------
  copa section
  --------------------------------------- */
- .copa {margin: 140px 180px;box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);}
+ .copa {margin: 140px 180px;box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+width: 1135px;
+
+}
  .copa-title {padding-top: 70px;
      text-align: center;
 font-size: 40px;
@@ -106,4 +146,41 @@ align-items: center;
     Height:110px;
 }
 .social-links{margin: 20px;}
+.social-links a{margin: 5px;}
 .copy-right{margin-bottom: 60px;}
+
+
+/* ----------------------------------
+media quary star 
+-------------------------------------------------------*/
+
+    @media only screen and (max-width:688px) {
+
+        
+        .header, #football, .copa, .heighlights-details{width: 100%;}
+
+        .headers, .players ,#football, .copa-team, .highlights{
+        grid-template-columns: repeat(1,1fr);}
+.players, #football, .copa, .highlights{padding:0;
+margin: 15px;}
+        
+        .headers { margin: auto;
+padding: 16px;}
+
+
+
+        .welcome-img img{width: 329px;
+            height: 259.17px}
+        .web-title h1{font-size: 
+            36px;}
+            .heighlights-details h1 {font-size: 
+                30px;}
+            .football-img img{margin: 10px;}
+            .heighlights-img img{width: 328px;
+                height: 248px;margin-top: 30px;}
+
+                .logo img{Width:300px;
+                    height: 70px;
+                }
+
+    }
